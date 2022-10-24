@@ -21,8 +21,8 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between font-raleway w-full px-4 pt-2 h-16 mx-auto border-b-2 border-black dark:border-black-100 dark:text-white sm:w-4/5">
-      <h1 className="text-lg font-major tracking-wide">
+    <header className="flex items-center justify-between font-raleway w-full px-4 pt-2 mb-8 h-16 mx-auto border-b-2 border-black dark:border-black-100 dark:text-white sm:w-4/5">
+      <h1 className="text-lg font-semibold font-roboto tracking-widest">
         Harlon<span className="animate-oscillator">_</span>
       </h1>
       <div
@@ -42,12 +42,12 @@ const Header = () => {
         </div>
         {theme === "light" ? (
           <MdDarkMode
-            className="w-7 h-7 cursor-pointer"
+            className="w-6 h-6 cursor-pointer"
             onClick={() => setTheme("dark")}
           />
         ) : (
           <MdLightMode
-            className="w-7 h-7 cursor-pointer"
+            className="w-6 h-6 cursor-pointer"
             onClick={() => setTheme("light")}
           />
         )}

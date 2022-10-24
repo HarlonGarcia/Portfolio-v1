@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
-        major: ["Major Mono Display", "monospace"],
+        roboto: ["Roboto Slab", "monospace"],
       },
       keyframes: {
         pulse: {
