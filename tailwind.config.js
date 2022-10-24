@@ -6,6 +6,18 @@ module.exports = {
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
+        major: ["Major Mono Display", "monospace"],
+      },
+      keyframes: {
+        pulse: {
+          "0%": { opacity: "1" },
+          "30%": { opacity: "0" },
+          "70%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        oscillator: "pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
     colors: {
