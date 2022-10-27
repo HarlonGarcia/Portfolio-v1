@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: theme('colors.black.DEFAULT');
+}
+
+*::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background-color: theme('colors.blue.DEFAULT');
+}
+
+html {
+  position: relative;
+}

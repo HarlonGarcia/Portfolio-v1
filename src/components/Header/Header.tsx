@@ -21,9 +21,12 @@ const Header = () => {
   };
 
   return (
-    <header className="font-raleway w-full mb-8 mx-auto h-16 dark:text-white flex justify-center">
+    <header className="font-raleway w-full mb-14 mx-auto h-16 dark:text-white flex justify-center">
       <nav className="fixed w-full top-0 z-40 flex h-16 px-4 pt-2 items-center justify-between bg-beige border-b-2 border-black dark:bg-black dark:border-black-100 sm:w-4/5 ">
-        <h1 className="text-lg font-semibold font-roboto tracking-widest">
+        <h1
+          className="text-lg font-semibold font-roboto tracking-widest"
+          translate="no"
+        >
           Harlon<span className="animate-oscillator">_</span>
         </h1>
         <div

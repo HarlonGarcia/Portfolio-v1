@@ -13,12 +13,12 @@ const Technologies = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="700"
-      className="text-black font-raleway dark:text-white"
+      className="text-black font-raleway mb-8 dark:text-white"
     >
       <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
         My favorite <span className="border-b-2 border-red">technologies</span>
       </h2>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 mb-4">
         {techIcons.map(({ icon, title }, index) => (
           <Technology
             icon={icon}
@@ -28,6 +28,38 @@ const Technologies = () => {
           />
         ))}
       </div>
+      <p>
+        Others frameworks, libraries and tools that I use in my personal
+        projects:{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Spring
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Angular
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Styled Components
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Postgres
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Netlify
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Figma
+        </span>
+        ,{" "}
+        <span className="hover:text-red dark:hover:text-yellow font-semibold">
+          Photoshop
+        </span>
+        , etc.
+      </p>
     </div>
   );
 };
