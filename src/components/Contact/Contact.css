@@ -1,0 +1,16 @@
+.btn {
+  --blue: theme('colors.blue.DEFAULT');
+  --dark-blue: theme('colors.blue.100');
+
+  background-image: linear-gradient(to right, var(--dark-blue), var(--blue), var(--dark-blue));
+  background-size: 300% 100%;
+
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+  transition: all .5s ease-in-out;
+}

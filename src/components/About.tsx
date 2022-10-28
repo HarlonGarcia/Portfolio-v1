@@ -23,9 +23,11 @@ const About = () => {
         Harlon Garcia
       </h1>
       <p className="mb-6 md:text-md lg:text-lg">
-        I'm a design-minded software developer and my goal is to increase the
-        percentage of dark and accessible websites. I worked as Graphic Designer
-        for about 2 years, so I decided to enjoy my developer journey.
+        I'm a design-minded software developer based in{" "}
+        <span className="hover:text-green">Brazil</span>
+        💚 and my goal is to increase the percentage of dark and accessible
+        websites. I worked as Graphic Designer for about 2 years, so I decided
+        to enjoy my developer journey.
       </p>
       <button className="bg-blue p-2 px-4 animate-bounce hover:shadow-lg hover:shadow-blue/10 text-white">
         <a

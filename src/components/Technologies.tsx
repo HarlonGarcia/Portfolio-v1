@@ -12,8 +12,7 @@ const Technologies = () => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-duration="700"
-      className="text-black font-raleway mb-8 dark:text-white"
+      className="text-black font-raleway mb-14 dark:text-white"
     >
       <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
         My favorite <span className="border-b-2 border-red">technologies</span>
@@ -28,7 +27,7 @@ const Technologies = () => {
           />
         ))}
       </div>
-      <p>
+      <p data-aos="fade-up">
         Others frameworks, libraries and tools that I use in my personal
         projects:{" "}
         <span className="hover:text-red dark:hover:text-yellow font-semibold">
