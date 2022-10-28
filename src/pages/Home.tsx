@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../components/About";
 import Contact from "../components/Contact/Contact";
+import Social from "../components/Social";
 import Technologies from "../components/Technologies";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <About />
       <Technologies />
       <Contact />
+      <Social />
     </div>
   );
 };

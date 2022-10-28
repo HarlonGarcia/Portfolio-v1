@@ -17,7 +17,7 @@ const About = () => {
         Hey, my name is
       </h2>
       <h1
-        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl md:text-6xl md:text-7xl"
+        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl md:text-6xl md:text-8xl"
         translate="no"
       >
         Harlon Garcia

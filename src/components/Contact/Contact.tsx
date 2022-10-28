@@ -36,7 +36,8 @@ const Contact = () => {
   return (
     <div
       data-aos="fade-up"
-      className="text-black font-raleway mb-8 dark:text-white"
+      className="text-black font-raleway mb-16 dark:text-white"
+      id="contact"
     >
       <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
         Send me a <span className="border-b-2 border-green">message</span>
@@ -57,7 +58,7 @@ const Contact = () => {
         />
         <textarea
           name="message"
-          className="mb-4 p-2 px-4 pt-2.5 outline-0 bg-black dark:bg-beige sm:h-28"
+          className="mb-4 p-2 px-4 pt-2.5 outline-0 bg-black resize-none dark:bg-beige sm:h-28"
           id="message"
           placeholder="What about work together? <3"
         />

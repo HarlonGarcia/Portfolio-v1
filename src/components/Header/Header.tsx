@@ -34,15 +34,30 @@ const Header = () => {
           className="fixed z-40 flex flex-col justify-between items-center p-4 text-white bg-black-100 h-[calc(100%_-_4rem)] top-16 right-0 transition-all duration-300 translate-x-[calc(100%_+_1rem)] min-w-[33%] sm:dark:text-white sm:text-black sm:bg-[transparent] sm:flex-row sm:relative sm:top-0 sm:translate-x-0"
         >
           <div className="flex flex-col items-center sm:flex-row sm:mr-8">
-            <h2 className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-red after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4">
+            <a
+              href="#about"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+              className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-red after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
+            >
               About
-            </h2>
-            <h2 className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-yellow after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4">
+            </a>
+            <a
+              href="#projects"
+              className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-yellow after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
+            >
               Projects
-            </h2>
-            <h2 className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-green after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4">
+            </a>
+            <a
+              href="#contact"
+              className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-green after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
+            >
               Contact
-            </h2>
+            </a>
           </div>
           {theme === "light" ? (
             <MdDarkMode
