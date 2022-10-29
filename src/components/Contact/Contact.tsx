@@ -45,7 +45,7 @@ const Contact = () => {
       <form
         ref={form}
         action="mailto:harlondesigner@gmail.com"
-        className="flex flex-col max-w-[40rem] text-white sm:w-3/5 dark:text-black"
+        className="flex flex-col max-w-[40rem] text-white sm:w-3/5 md:text-lg dark:text-black"
         onSubmit={handleSubmit}
       >
         <input

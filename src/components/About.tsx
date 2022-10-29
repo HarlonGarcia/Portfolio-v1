@@ -13,16 +13,16 @@ const About = () => {
       data-aos="fade-up"
       className="text-black mb-14 font-raleway dark:text-white"
     >
-      <h2 className="font-semibold md:text-lg lg:text-xl lg:mb-2">
+      <h2 className="font-semibold sm:mb-2 md:text-lg lg:text-xl">
         Hey, my name is
       </h2>
       <h1
-        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl md:text-6xl md:text-8xl"
+        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl sm:mb-6 md:text-6xl md:text-8xl"
         translate="no"
       >
         Harlon Garcia
       </h1>
-      <p className="mb-6 md:text-md lg:text-lg">
+      <p className="mb-6 sm:text-md md:text-lg">
         I'm a design-minded software developer based in{" "}
         <span className="hover:text-green">Brazil</span>
         💚 and my goal is to increase the percentage of dark and accessible
@@ -36,7 +36,7 @@ const About = () => {
           rel="noreferrer"
           className="flex items-center"
         >
-          <span className="mr-2">See my github!</span>
+          <span className="mr-2 md:text-lg">See my github!</span>
           <VscGithub className="w-5 h-5" />
         </a>
       </button>

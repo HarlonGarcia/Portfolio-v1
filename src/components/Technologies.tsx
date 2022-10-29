@@ -56,9 +56,14 @@ const Technologies = () => {
           />
         ))}
       </div>
-      <p data-aos="fade-up">
+      <p data-aos="fade-up" className="sm:text-md lg:text-lg" id="projects">
         Others frameworks, libraries and tools that I use in my personal
-        projects: <span ref={el} className="hover:text-red font-bold"></span>
+        projects:{" "}
+        <span
+          ref={el}
+          className="font-bold hover:text-red"
+          translate="no"
+        ></span>
       </p>
     </div>
   );
