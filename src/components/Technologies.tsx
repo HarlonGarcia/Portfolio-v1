@@ -1,12 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { techIcons } from "../utils/techs";
 import Technology from "./Technology";
+import Typed from "typed.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Technologies = () => {
+  const el = useRef<HTMLSpanElement>(null);
+
   useEffect(() => {
     AOS.init();
+
+    const typed = new Typed(el.current || "", {
+      strings: [
+        "Spring",
+        "PostgreeSQL",
+        "MySQL",
+        "Angular",
+        "AngularJS",
+        "HTML5",
+        "CSS3",
+        "Styled Components",
+        "Bootstrap",
+        "Figma",
+        "Photoshop",
+        "Netlify",
+        "Git",
+        "Linux",
+      ],
+      typeSpeed: 140,
+      backSpeed: 100,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
   }, []);
 
   return (
@@ -29,35 +58,7 @@ const Technologies = () => {
       </div>
       <p data-aos="fade-up">
         Others frameworks, libraries and tools that I use in my personal
-        projects:{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Spring
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Angular
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Styled Components
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Postgres
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Netlify
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Figma
-        </span>
-        ,{" "}
-        <span className="hover:text-red dark:hover:text-yellow font-semibold">
-          Photoshop
-        </span>
-        , etc.
+        projects: <span ref={el} className="hover:text-red font-bold"></span>
       </p>
     </div>
   );
