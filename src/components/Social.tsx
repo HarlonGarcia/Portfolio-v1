@@ -26,7 +26,7 @@ const Social = () => {
           <FaGithub className="w-7 h-7 m-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue hover:translate-y-[-3px] focus:translate-y-[-3px]" />
         </a>
       </div>
-      <h4 className="w-fit text-black/30 font-roboto font-semibold mx-auto dark:text-black-200">
+      <h4 className="w-fit text-black/30 text-sm font-roboto font-semibold mx-auto dark:text-black-200">
         &copy; 2022 Harlon
       </h4>
     </div>

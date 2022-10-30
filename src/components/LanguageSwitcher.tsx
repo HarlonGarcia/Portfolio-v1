@@ -21,8 +21,6 @@ const LanguageSwitcher = () => {
   const setLanguage = () => {
     el?.current?.classList.remove("block");
     el?.current?.classList.add("hidden");
-
-    i18n.changeLanguage(currentLang === pt_br ? "en" : "ptBR");
   };
 
   return (
@@ -38,21 +36,23 @@ const LanguageSwitcher = () => {
         className="hidden flex flex-col items-center -top-24 overflow-hidden absolute rounded-full w-9 z-10 bg-black-200 sm:bg-black-100 sm:top-9"
       >
         <img
-          className="w-6 h-6 my-2 cursor-pointer"
+          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%]"
           src={pt_br}
           alt="Portugûes"
           onClick={() => {
             setCurrentLang(pt_br);
             setLanguage();
+            i18n.changeLanguage("ptBR");
           }}
         />
         <img
-          className="w-6 h-6 my-2 cursor-pointer"
+          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%]"
           src={en_us}
           alt="English"
           onClick={() => {
             setCurrentLang(en_us);
             setLanguage();
+            i18n.changeLanguage("en");
           }}
         />
       </div>
