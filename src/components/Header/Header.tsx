@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { useTheme } from "../../hooks/useTheme";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import "./Header.css";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -31,7 +34,7 @@ const Header = () => {
         </h1>
         <div
           id="menu-items"
-          className="fixed z-40 flex flex-col justify-between items-center p-4 text-white bg-black-100 h-[calc(100%_-_4rem)] top-16 right-0 transition-all duration-300 translate-x-[calc(100%_+_1rem)] min-w-[33%] sm:dark:text-white sm:text-black sm:bg-[transparent] sm:flex-row sm:relative sm:top-0 sm:translate-x-0"
+          className="fixed z-40 flex flex-col items-center justify-between p-4 text-white bg-black-100 h-[calc(100%_-_4rem)] top-16 right-0 transition-all duration-300 translate-x-[calc(100%_+_1rem)] min-w-[33%] sm:dark:text-white sm:text-black sm:bg-[transparent] sm:flex-row sm:relative sm:top-0 sm:translate-x-0"
         >
           <div className="flex flex-col items-center sm:flex-row sm:mr-8">
             <a
@@ -44,19 +47,19 @@ const Header = () => {
               }
               className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-red after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
             >
-              About
+              {t("navAbout")}
             </a>
             <a
               href="#projects"
               className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-yellow after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
             >
-              Projects
+              {t("navProjects")}
             </a>
             <a
               href="#contact"
               className="m-2 duration-500 cursor-pointer pt-0.5 after:transition-transform after:duration-300 after:border-b-2 after:block after:border-green after:scale-x-0 after:content-[''] hover:after:scale-x-110 sm:m-0 sm:mx-4"
             >
-              Contact
+              {t("navContact")}
             </a>
           </div>
           {theme === "light" ? (
@@ -70,6 +73,7 @@ const Header = () => {
               onClick={() => setTheme("light")}
             />
           )}
+          <LanguageSwitcher />
         </div>
 
         <div

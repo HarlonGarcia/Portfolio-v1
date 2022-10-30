@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "navAbout": "About",
+    "navProjects": "Projects",
+    "navContact": "Contact",
+    "presentation": "Hey, my name is",
+    "about": "I'm a design-minded software developer based in Brazil💚 who likes building dark and accessible websites, but long-term I intend to move towards becoming a full-stack developer. I worked as Graphic Designer for about 2 years, so I decided to start my journey into tech.",
+    "githubButton": "See my github!",
+    "techTitlePart1": "My favorite ",
+    "techTitlePart2": "technologies",
+    "othersTechs": "Others frameworks, libraries and tools that I use in my personal projects: ",
+    "projectsTitlePart1": "Some things ",
+    "projectsTitlePart2": "I've built",
+    "seeMore": "See more",
+    "contactTitlePart1": "Send me a ",
+    "contactTitlePart2": "message",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "What about work together? <3",
+    "submit": "Submit"
+  }
+}

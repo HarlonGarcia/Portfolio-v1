@@ -4,9 +4,11 @@ import Technology from "./Technology";
 import Typed from "typed.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const Technologies = () => {
   const el = useRef<HTMLSpanElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init();
@@ -44,7 +46,8 @@ const Technologies = () => {
       className="text-black font-raleway mb-14 dark:text-white"
     >
       <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
-        My favorite <span className="border-b-2 border-red">technologies</span>
+        {t("techTitlePart1")}
+        <span className="border-b-2 border-red">{t("techTitlePart2")}</span>
       </h2>
       <div className="flex flex-wrap gap-3 mb-4">
         {techIcons.map(({ icon, title }, index) => (
@@ -57,8 +60,7 @@ const Technologies = () => {
         ))}
       </div>
       <p data-aos="fade-up" className="sm:text-md lg:text-lg" id="projects">
-        Others frameworks, libraries and tools that I use in my personal
-        projects:{" "}
+        {t("othersTechs")}
         <span
           ref={el}
           className="font-bold hover:text-red"

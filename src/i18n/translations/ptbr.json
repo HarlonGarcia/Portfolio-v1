@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "navAbout": "Sobre",
+    "navProjects": "Projetos",
+    "navContact": "Contato",
+    "presentation": "Olá, meu nome é",
+    "about": "Sou um desenvolvedor de software com experiência em design nascido no Brasil 💚 que gosta de construir sites acessíveis e interativos, mas a longo prazo pretendo me tornar um desenvolvedor full-stack. Trabalhei como Designer Gráfico por cerca de 2 anos, então decidi começar minha jornada na área de tecnologia.",
+    "githubButton": "Veja meu github!",
+    "techTitlePart1": "Minhas ",
+    "techTitlePart2": "tecnologias favoritas",
+    "othersTechs": "Outros frameworks, bibliotecas e ferramentas que uso em meus projetos: ",
+    "projectsTitlePart1": "Veja alguns dos meus ",
+    "projectsTitlePart2": "projetos",
+    "seeMore": "Veja mais",
+    "contactTitlePart1": "Envie-me uma ",
+    "contactTitlePart2": "mensagem",
+    "emailPlaceholder": "seu@email.com",
+    "messagePlaceholder": "O que acha de trabalharmos juntos? <3",
+    "submit": "Enviar"
+  }
+}

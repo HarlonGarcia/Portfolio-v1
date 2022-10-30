@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineDeploymentUnit, AiFillCode } from "react-icons/ai";
 
 interface Links {
@@ -15,7 +14,7 @@ interface Proj {
 
 const Project = ({ title, image, techs, links }: Proj) => {
   return (
-    <div className="group bg-black text-white flex flex-col items-center justify-between text-center p-4 dark:bg-black-100 sm:w-[48%] sm:min-w-[15rem] lg:w-[31%] xl:min-w-min xl:w-[23%]">
+    <div className="group bg-black text-white flex flex-col items-center justify-between max-w-[20rem] text-center p-4 dark:bg-black-100 sm:max-w-none sm:w-[48%] sm:min-w-[15rem] lg:w-[31%] xl:min-w-min xl:w-[23%]">
       <div>
         <div className="w-full mb-4 overflow-hidden">
           <img
@@ -39,14 +38,18 @@ const Project = ({ title, image, techs, links }: Proj) => {
       </div>
       <div className="flex">
         {links?.repository && (
-          <a href={links.repository} target="_blank" rel="noreferrer">
-            <AiFillCode className="w-7 h-7 m-2 cursor-pointer" />
-          </a>
+          <button>
+            <a href={links.repository} target="_blank" rel="noreferrer">
+              <AiFillCode className="w-7 h-7 m-2 cursor-pointer" />
+            </a>
+          </button>
         )}
         {links?.deploy && (
-          <a href={links.deploy} target="_blank" rel="noreferrer">
-            <AiOutlineDeploymentUnit className="w-7 h-7 m-2 cursor-pointer" />
-          </a>
+          <button>
+            <a href={links.deploy} target="_blank" rel="noreferrer">
+              <AiOutlineDeploymentUnit className="w-7 h-7 m-2 cursor-pointer" />
+            </a>
+          </button>
         )}
       </div>
     </div>

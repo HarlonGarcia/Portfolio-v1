@@ -4,9 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import keys from "../../utils/keys_emailjs";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init();
@@ -40,7 +42,10 @@ const Contact = () => {
       id="contact"
     >
       <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
-        Send me a <span className="border-b-2 border-green">message</span>
+        {t("contactTitlePart1")}
+        <span className="border-b-2 border-green">
+          {t("contactTitlePart2")}
+        </span>
       </h2>
       <form
         ref={form}
@@ -53,21 +58,21 @@ const Contact = () => {
           className="mb-2 p-2 px-4 pt-2.5 outline-0 bg-black dark:bg-beige"
           id="email"
           type="text"
-          placeholder="your@email.com"
+          placeholder={t("emailPlaceholder")}
           required
         />
         <textarea
           name="message"
           className="mb-4 p-2 px-4 pt-2.5 outline-0 bg-black resize-none dark:bg-beige sm:h-28"
           id="message"
-          placeholder="What about work together? <3"
+          placeholder={t("messagePlaceholder")}
         />
         <button
           className="btn p-2 w-2/5 min-w-fit text-white sm:max-w-20"
           type="submit"
           name="submit"
         >
-          Submit
+          {t("submit")}
         </button>
       </form>
     </div>

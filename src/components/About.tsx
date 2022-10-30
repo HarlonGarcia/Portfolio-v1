@@ -2,8 +2,11 @@ import { VscGithub } from "react-icons/vsc";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -14,7 +17,7 @@ const About = () => {
       className="text-black mb-14 font-raleway dark:text-white"
     >
       <h2 className="font-semibold sm:mb-2 md:text-lg lg:text-xl">
-        Hey, my name is
+        {t("presentation")}
       </h2>
       <h1
         className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl sm:mb-6 md:text-6xl md:text-8xl"
@@ -22,13 +25,7 @@ const About = () => {
       >
         Harlon Garcia
       </h1>
-      <p className="mb-6 sm:text-md md:text-lg">
-        I'm a design-minded software developer based in{" "}
-        <span className="hover:text-green">Brazil</span>
-        💚 and my goal is to increase the percentage of dark and accessible
-        websites. I worked as Graphic Designer for about 2 years, so I decided
-        to enjoy my developer journey.
-      </p>
+      <p className="mb-6 sm:text-md md:text-lg">{t("about")}</p>
       <button className="bg-blue p-2 px-4 animate-bounce hover:shadow-lg hover:shadow-blue/10 text-white">
         <a
           href="https://github.com/HarlonGarcia"
@@ -36,7 +33,7 @@ const About = () => {
           rel="noreferrer"
           className="flex items-center"
         >
-          <span className="mr-2 md:text-lg">See my github!</span>
+          <span className="mr-2 md:text-lg">{t("githubButton")}</span>
           <VscGithub className="w-5 h-5" />
         </a>
       </button>
