@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import keys from "../../utils/keys_emailjs";
 import { useTranslation } from "react-i18next";
+import { Notify } from "notiflix";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -25,14 +26,13 @@ const Contact = () => {
         form.current,
         keys.PLUBIC_URL
       )
-      .then(
-        (result) => {
-          alert("Message sent, We will get back to you shortly");
-        },
-        (error) => {
-          alert("An error occurred, please try again");
-        }
-      );
+      .then(() => {
+        Notify.success(t("submitSuccess"));
+      })
+      .catch((error) => {
+        Notify.failure(t("submitFailure"));
+        console.log(error);
+      });
   };
 
   return (

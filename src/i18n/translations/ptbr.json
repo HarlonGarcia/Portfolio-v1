@@ -16,6 +16,8 @@
     "contactTitlePart2": "mensagem",
     "emailPlaceholder": "seu@email.com",
     "messagePlaceholder": "O que acha de trabalharmos juntos? <3",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "submitSuccess": "Mensagem enviada",
+    "submitFailure": "Ocorreu um erro, tente novamente!"
   }
 }

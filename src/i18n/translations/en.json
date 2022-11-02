@@ -16,6 +16,8 @@
     "contactTitlePart2": "message",
     "emailPlaceholder": "your@email.com",
     "messagePlaceholder": "What about work together? <3",
-    "submit": "Submit"
+    "submit": "Submit",
+    "submitSuccess": "Message sent, we will get back to you shortly",
+    "submitFailure": "An error occurred, please try again"
   }
 }
