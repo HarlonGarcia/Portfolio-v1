@@ -18,7 +18,7 @@ const Projects = () => {
       data-aos="fade-up"
       className="mb-14 text-black font-raleway dark:text-white"
     >
-      <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
+      <h2 className="font-roboto text-xl mb-4 lg:text-2xl 2xl:mb-6 2xl:text-4xl">
         {t("projectsTitlePart1")}
         <span className="border-b-2 border-yellow">
           {t("projectsTitlePart2")}
@@ -44,7 +44,7 @@ const Projects = () => {
           rel="noreferrer"
           className="flex items-center w-fit sm:text-md group"
         >
-          <span className="mr-2">{t("seeMore")}</span>
+          <span className="mr-2 lg:text-xl 2xl:text-2xl">{t("seeMore")}</span>
           <BsArrowRight className="w-4 h-4 transition-all group-hover:translate-x-[3px] sm:w-5 sm:h-5" />
         </a>
       </button>

@@ -29,14 +29,18 @@ const LanguageSwitcher = () => {
         className="bg-blue rounded-full overflow-hidden sm:block"
         onClick={handleClick}
       >
-        <img className="w-6 h-6" src={currentLang} alt="Current language" />
+        <img
+          className="w-6 h-6 lg:w-7 lg:h-7"
+          src={currentLang}
+          alt="Current language"
+        />
       </button>
       <div
         ref={el}
         className="hidden flex flex-col items-center -top-24 overflow-hidden absolute rounded-full w-9 z-10 bg-black-200 sm:bg-black-100 sm:top-9"
       >
         <img
-          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%]"
+          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] lg:w-7 lg:h-7"
           src={pt_br}
           alt="Portugûes"
           onClick={() => {
@@ -46,7 +50,7 @@ const LanguageSwitcher = () => {
           }}
         />
         <img
-          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%]"
+          className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] lg:w-7 lg:h-7"
           src={en_us}
           alt="English"
           onClick={() => {

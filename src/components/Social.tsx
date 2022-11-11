@@ -16,17 +16,17 @@ const Social = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin className="w-7 h-7 m-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue hover:translate-y-[-3px] focus:translate-y-[-3px]" />
+          <FaLinkedin className="w-7 h-7 m-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue hover:translate-y-[-3px] focus:translate-y-[-3px] 2xl:w-10 2xl:h-10" />
         </a>
         <a
           href="https://github.com/HarlonGarcia"
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub className="w-7 h-7 m-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue hover:translate-y-[-3px] focus:translate-y-[-3px]" />
+          <FaGithub className="w-7 h-7 m-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue hover:translate-y-[-3px] focus:translate-y-[-3px] 2xl:w-10 2xl:h-10" />
         </a>
       </div>
-      <h4 className="w-fit text-black/30 text-sm font-roboto font-semibold mx-auto dark:text-black-200">
+      <h4 className="w-fit text-black/30 text-sm font-roboto font-semibold mx-auto dark:text-black-200 lg:text-md 2xl:text-xl">
         &copy; 2022 Harlon
       </h4>
     </div>

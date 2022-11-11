@@ -27,10 +27,12 @@ const Contact = () => {
         keys.PLUBIC_URL
       )
       .then(() => {
-        Notify.success(t("submitSuccess"));
+        Notify.success(t("submitSuccess"), {
+          timeout: 3000,
+        });
       })
       .catch((error) => {
-        Notify.failure(t("submitFailure"));
+        Notify.failure(t("submitFailure"), { timeout: 3000 });
         console.log(error);
       });
   };
@@ -41,7 +43,7 @@ const Contact = () => {
       className="text-black font-raleway mb-16 dark:text-white"
       id="contact"
     >
-      <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
+      <h2 className="font-roboto text-xl mb-4 lg:text-2xl 2xl:mb-6 2xl:text-4xl">
         {t("contactTitlePart1")}
         <span className="border-b-2 border-green">
           {t("contactTitlePart2")}
@@ -50,7 +52,7 @@ const Contact = () => {
       <form
         ref={form}
         action="mailto:harlondesigner@gmail.com"
-        className="flex flex-col max-w-[40rem] text-white sm:w-3/5 md:text-lg dark:text-black"
+        className="flex flex-col max-w-[40rem] text-white sm:w-3/5 md:text-lg 2xl:text-2xl dark:text-black"
         onSubmit={handleSubmit}
       >
         <input

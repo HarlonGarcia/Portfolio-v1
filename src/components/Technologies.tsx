@@ -45,7 +45,7 @@ const Technologies = () => {
       data-aos="fade-up"
       className="text-black font-raleway mb-14 dark:text-white"
     >
-      <h2 className="font-roboto text-xl mb-4 lg:text-2xl">
+      <h2 className="font-roboto text-xl mb-4 lg:text-2xl 2xl:mb-6 2xl:text-4xl">
         {t("techTitlePart1")}
         <span className="border-b-2 border-red">{t("techTitlePart2")}</span>
       </h2>
@@ -59,7 +59,11 @@ const Technologies = () => {
           />
         ))}
       </div>
-      <p data-aos="fade-up" className="sm:text-md lg:text-lg" id="projects">
+      <p
+        data-aos="fade-up"
+        className="sm:text-md lg:text-lg 2xl:text-2xl"
+        id="projects"
+      >
         {t("othersTechs")}
         <span
           ref={el}

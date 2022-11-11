@@ -16,17 +16,19 @@ const About = () => {
       data-aos="fade-up"
       className="text-black mb-14 font-raleway dark:text-white"
     >
-      <h2 className="font-semibold sm:mb-2 md:text-lg lg:text-xl">
+      <h2 className="font-semibold sm:mb-2 md:text-lg lg:text-xl 2xl:text-3xl">
         {t("presentation")}
       </h2>
       <h1
-        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl sm:mb-6 md:text-6xl md:text-8xl"
+        className="text-blue text-4xl font-roboto font-black mb-2 sm:text-5xl sm:mb-6 md:text-6xl md:text-8xl 2xl:text-9xl"
         translate="no"
       >
         Harlon Garcia
       </h1>
-      <p className="mb-6 sm:text-md md:text-lg">{t("about")}</p>
-      <button className="bg-blue p-2 px-4 animate-bounce hover:shadow-lg hover:shadow-blue/10 text-white">
+      <p className="mb-6 sm:text-md md:text-lg lg:text-xl 2xl:text-2xl">
+        {t("about")}
+      </p>
+      <button className="bg-blue p-2 px-4 animate-bounce hover:shadow-lg hover:shadow-blue/10 text-white 2xl:text-2xl">
         <a
           href="https://github.com/HarlonGarcia"
           target="_blank"
