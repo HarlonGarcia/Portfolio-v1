@@ -35,6 +35,7 @@ const Contact = () => {
         Notify.failure(t("submitFailure"), { timeout: 3000 });
         console.log(error);
       });
+    form.current.reset();
   };
 
   return (
@@ -51,7 +52,6 @@ const Contact = () => {
       </h2>
       <form
         ref={form}
-        action="mailto:harlondesigner@gmail.com"
         className="flex flex-col max-w-[40rem] text-white sm:w-3/5 md:text-lg 2xl:text-2xl dark:text-black"
         onSubmit={handleSubmit}
       >
@@ -59,7 +59,7 @@ const Contact = () => {
           name="email"
           className="mb-2 p-2 px-4 pt-2.5 outline-0 bg-black dark:bg-beige"
           id="email"
-          type="text"
+          type="email"
           placeholder={t("emailPlaceholder")}
           required
         />
@@ -68,6 +68,7 @@ const Contact = () => {
           className="mb-4 p-2 px-4 pt-2.5 outline-0 bg-black resize-none dark:bg-beige sm:h-28"
           id="message"
           placeholder={t("messagePlaceholder")}
+          required
         />
         <button
           className="btn p-2 w-2/5 min-w-fit text-white sm:max-w-20"
