@@ -8,7 +8,7 @@ const LanguageSwitcher = () => {
   const el = useRef<HTMLDivElement>(null);
   const { i18n } = useTranslation();
 
-  const handleClick = () => {
+  const showLanguageOptions = () => {
     if (el.current?.classList.contains("hidden")) {
       el.current.classList.remove("hidden");
       el.current.classList.add("block");
@@ -18,16 +18,11 @@ const LanguageSwitcher = () => {
     }
   };
 
-  const setLanguage = () => {
-    el?.current?.classList.remove("block");
-    el?.current?.classList.add("hidden");
-  };
-
   return (
     <div className="flex flex-col items-center relative mx-4">
       <button
         className="bg-blue rounded-full overflow-hidden sm:block"
-        onClick={handleClick}
+        onClick={showLanguageOptions}
       >
         <img
           className="w-6 h-6 lg:w-7 lg:h-7"
@@ -46,7 +41,7 @@ const LanguageSwitcher = () => {
             alt="Portugûes"
             onClick={() => {
               setCurrentLang(pt_br);
-              setLanguage();
+              showLanguageOptions();
               i18n.changeLanguage("ptBR");
             }}
           />
@@ -58,7 +53,7 @@ const LanguageSwitcher = () => {
             alt="English"
             onClick={() => {
               setCurrentLang(en_us);
-              setLanguage();
+              showLanguageOptions();
               i18n.changeLanguage("en");
             }}
           />
