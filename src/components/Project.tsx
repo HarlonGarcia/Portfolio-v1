@@ -5,14 +5,14 @@ interface Links {
   deploy: string;
 }
 
-interface Proj {
+interface ProjectProps {
   title: string;
   image: string;
   techs: string[];
   links?: Links;
 }
 
-const Project = ({ title, image, techs, links }: Proj) => {
+const Project = ({ title, image, techs, links }: ProjectProps) => {
   return (
     <div className="group bg-black text-white flex flex-col items-center justify-between max-w-[20rem] text-center p-4 dark:bg-black-100 sm:max-w-none sm:w-[48%] sm:min-w-[15rem] lg:w-[31%] xl:min-w-min xl:w-[23%]">
       <div>
@@ -45,14 +45,14 @@ const Project = ({ title, image, techs, links }: Proj) => {
         {links?.repository && (
           <button>
             <a href={links.repository} target="_blank" rel="noreferrer">
-              <AiFillCode className="w-7 h-7 m-2 cursor-pointer 2xl:w-10 2xl:h-10" />
+              <AiFillCode className="w-7 h-7 m-2 cursor-pointer 2xl:w-10 2xl:h-10 hover:text-yellow" />
             </a>
           </button>
         )}
         {links?.deploy && (
           <button>
             <a href={links.deploy} target="_blank" rel="noreferrer">
-              <AiOutlineDeploymentUnit className="w-7 h-7 m-2 cursor-pointer 2xl:w-10 2xl:h-10" />
+              <AiOutlineDeploymentUnit className="w-7 h-7 m-2 cursor-pointer 2xl:w-10 2xl:h-10 hover:text-yellow" />
             </a>
           </button>
         )}

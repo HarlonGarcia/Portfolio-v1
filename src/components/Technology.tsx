@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-interface Tech {
+interface TechnologyProps {
   icon: JSX.Element;
   title: string;
   delay: number;
 }
 
-const Technology = ({ icon, title, delay }: Tech) => {
+const Technology = ({ icon, title, delay }: TechnologyProps) => {
   useEffect(() => {
     AOS.init();
   }, []);

@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
         onClick={showLanguageOptions}
       >
         <img
-          className="w-6 h-6 lg:w-7 lg:h-7"
+          className="w-6 h-6 2xl:w-7 2xl:h-7"
           src={currentLang}
           alt="Current language"
         />
@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
       >
         {currentLang === en_us && (
           <img
-            className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] lg:w-7 lg:h-7"
+            className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] 2xl:w-7 2xl:h-7"
             src={pt_br}
             alt="Portugûes"
             onClick={() => {
@@ -48,7 +48,7 @@ const LanguageSwitcher = () => {
         )}
         {currentLang === pt_br && (
           <img
-            className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] lg:w-7 lg:h-7"
+            className="w-6 h-6 my-2 cursor-pointer hover:scale-95 hover:brightness-[75%] 2xl:w-7 2xl:h-7"
             src={en_us}
             alt="English"
             onClick={() => {

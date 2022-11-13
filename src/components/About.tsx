@@ -25,7 +25,7 @@ const About = () => {
       >
         Harlon Garcia
       </h1>
-      <p className="mb-6 sm:text-md md:text-lg lg:text-xl 2xl:text-2xl">
+      <p className="mb-6 sm:text-md sm:mb-8 md:text-lg lg:mb-10 lg:text-lg xl:text-xl 2xl:text-2xl">
         {t("about")}
       </p>
       <button className="bg-blue p-2 px-4 animate-bounce hover:shadow-lg hover:shadow-blue/10 text-white 2xl:text-2xl">
