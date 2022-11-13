@@ -17,11 +17,13 @@ const Project = ({ title, image, techs, links }: Proj) => {
     <div className="group bg-black text-white flex flex-col items-center justify-between max-w-[20rem] text-center p-4 dark:bg-black-100 sm:max-w-none sm:w-[48%] sm:min-w-[15rem] lg:w-[31%] xl:min-w-min xl:w-[23%]">
       <div>
         <div className="w-full mb-4 overflow-hidden 2xl:mb-6">
-          <img
-            src={image}
-            alt={title}
-            className="transition-transform duration-500 group-hover:grayscale group-hover:scale-125"
-          />
+          <a href={links?.deploy} target="_blank" rel="noreferrer">
+            <img
+              src={image}
+              alt={title}
+              className="transition-transform duration-500 group-hover:grayscale group-hover:scale-125"
+            />
+          </a>
         </div>
         <h2
           className="text-lg font-semibold mb-4 lg:text-xl 2xl:text-2xl 2xl:mb-6"
